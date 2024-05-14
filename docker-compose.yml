@@ -1,0 +1,8 @@
+services:
+  production:
+    image: my-app:prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8080:80'
