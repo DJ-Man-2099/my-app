@@ -8,3 +8,8 @@ before_install:
 
 script: 
   - docker run my-app:dev npm run test -- --run --coverage
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: HRKU-7f304b1b-93d6-4b04-a452-70e0cba84ec1
